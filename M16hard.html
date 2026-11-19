@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9eef5;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: white;
+            width: 350px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+          
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 15px;
+            color: #333;
+        }
+        input[type="text"] {
+            border: 2px solid #3498db;
+            background-color: #eef7ff;
+        }
+
+        input[type="email"] {
+            border: 2px solid #2ecc71;
+            background-color: #effff5;
+        }
+
+      
+        input[type="password"] {
+            border: 2px solid #9b59b6;
+            background-color: #f8efff;
+        }
+
+        
+        input[required] {
+            border-radius: 8px;
+        }
+
+        
+        input[disabled] {
+            background-color: #ddd;
+            border: 2px solid #999;
+            cursor: not-allowed;
+        }
+
+        
+        input:focus {
+            outline: 2px solid orange;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #217dbb;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form>
+
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password" required>
+
+        <label>Username:</label>
+        <input type="text" placeholder="Username">
+
+        <label>Account ID:</label>
+        <input type="text" value="12345" disabled>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
